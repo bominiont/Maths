@@ -1,0 +1,280 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-image: url('background.png'); /* Path to your image file */
+    	    background-size: cover; /* Cover ensures the image covers the entire area */
+    	    background-repeat: no-repeat; /* This prevents the image from repeating */
+    	    background-attachment: fixed;
+            justify-content: center;
+    font-family: 'Times New Roman', serif;
+    overflow: hidden;
+    /* display: flex; */
+    align-items: center;
+}
+#username{
+    margin:0 auto;
+    margin-top: 200px;
+    width:100px;
+    height:100px;
+    /* background:#282A3A; */
+    /* border-radius: 5px; */
+    font-size:40px;
+    color: black;
+    text-align: center;
+}
+#username input {
+    width: 350px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+    margin-right: -170px;
+    margin-top: -2px;
+    font-size: 26pt;
+    
+}
+#scoresheet{
+    margin:0 auto;
+    margin-top: 200px;
+    width:600px;
+    height:100px;
+    /* background:#282A3A; */
+    /* border-radius: 5px; */
+    font-size:40px;
+    color: black;
+    text-align: center;
+}
+#score{
+    margin:0 auto;
+    /* margin-top: 200px; */
+    width:600px;
+    height:100px;
+}
+#score input {
+    margin: 0 auto;
+    width: 350px;
+    height: 140px;
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+    margin-right: +100px;
+    margin-top: -2px;
+    font-size: 26pt;
+    background: #282A3A;
+    color:white
+    
+}
+#start{
+    margin:0 44%;
+    margin-top: 50px;
+    width:300px;
+    height: 100px;
+    background:#282A3A;
+    font-size: 30pt;
+    color:white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#game {
+    
+    margin:0 auto;
+    margin-top:200px;
+    
+    /* position: absolute; */
+    /* top: 220px;
+    left: 700px; */
+    /* transform: translate(-50%, -50%); */
+    width: 600px;
+    height: 600px;
+    display: block;
+}
+#matchlabel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+	font-family: 'Times New Roman', serif;
+}
+.column-container1{
+    position: absolute;
+    left:60%;
+
+}
+.column-container2
+{
+    position:absolute;
+    right:60%;
+    width:200px
+}.column1 {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+}
+.column2 {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+}
+#left,#right{
+    position: absolute;
+    display:flex;
+    width: 100px;
+    height: 100px;
+    left:100px;
+    border-radius: 5px;
+    font-size: 60px;
+    top:150px;
+    background: #282A3A;
+    color:#FFF;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 60pt;
+}
+
+#right{
+    left:220px;
+}
+.card1,.card2 {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    /* transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1); */
+    backface-visibility: hidden;
+    font-size: 28pt;
+    /* user-select: none; */
+    text-align: center;
+    line-height: 100px;
+    transform: rotateY(0deg) rotateZ(0deg);
+    color: #FFF;
+}
+/* Khushika */
+#First {
+    margin: 0 auto;
+    margin-top: 200px;
+    display: none;
+}
+#options {
+    display: flex;
+    /* left:150px; */
+    justify-content: center; /* This centers the items horizontally */
+    flex-wrap: wrap; /* This allows items to wrap into a new line if the screen is too small */
+}
+
+#question {
+    font-size: 40px;
+    color:black; 
+    text-align: center;
+    font-family: 'Times New Roman', serif;  /* Adjust the size as needed */
+    /* Other styling options like font-weight, color, etc., can be added here */
+    /* color: Orchid; */
+}
+
+.number-option {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background:  #282A3A;
+    color:#FFF;
+    /* border: 3px solid black; */
+    cursor: pointer;
+    font-family: 'Times New Roman', serif; 
+    font-size: 28pt; 
+
+}
+
+.selected {
+    background: green;
+    /* border-width: 8px; Adjust this value to change the border thickness */
+}
+/* ARYAN */
+
+#exercise {
+    display: none;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.question {
+        margin: 7px;
+        padding: 7px;
+        height:50px;
+        border-radius: 5px;
+        /* border: 3px solid SlateBlue; */
+        /* cursor: pointer; */
+        font-family: 'Times New Roman', serif; 
+        font-size: 28pt; 
+        background:#282A3A;
+        color: white;
+}
+
+#question {
+        font-size: 40px;
+    font-family: 'Times New Roman', serif;  /* Adjust the size as needed */
+        /* Other styling options like font-weight, color, etc., can be added here */
+    color: black ;
+}
+.question p {
+    margin: 0;
+}
+.question input {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 10px;
+    margin-top: -2px;
+    font-size: 26pt;
+    
+}
+/* #Submitcont{
+    /* position: absolute; */
+    /* margin:340 auto; */
+    /* margin-left:7%; */
+    /* margin-top:10%; */
+    
+#submit{
+    position:absolute;
+    width: 220px;
+    height:120px;
+    margin:150px;
+    /* margin-top:120px; */
+    /* left:250px; */
+    left:-50px;
+    border-radius: 5px;
+    font-size: 60px;
+    top:150px;
+    border-radius: 5px;
+    /* left:20%; */
+    font-size: 26pt;
+    background:#282A3A ;
+    border:none;
+    color:white
+}
+.question input::placeholder {
+font-size: 26pt; /* Adjust the size as needed */
+color: rgb(14, 56, 90); /* Change color as needed */
+
+}
+.question input::-webkit-outer-spin-button,
+.question input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.random-number {
+        cursor: pointer;
+        font-family: 'Times New Roman', serif; 
+        font-size: 28pt; 
+        color:white;
+
+    }
+/* Aryan */

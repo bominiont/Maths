@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="trystyle.css">
+    <script src="tryscript.js" defer></script>
+</head>
+<body>
+    
+    <div id="game" >
+        <div id="matchlabel">Match the following</div>
+        <canvas id="matchcanvas" width="900" height="900" style="position: fixed  ;"></canvas>
+        <!-- <div class="timer">Time: 0 sec</div> -->
+        <div class="column-container1">
+            <div class="column1"></div>
+        </div>
+        <div class="column-container2">
+            <div class="column2"></div>
+        </div>
+    </div>
+    <div id="First" >
+    <p id="question" style="color:black">Select the smallest number</p>
+
+        <div id="options">
+            <div id="K00" class="number-option">49</div>
+            <div id="K01" class="number-option">17</div>
+            <div id="K02" class="number-option">35</div>
+            <div id="K03" class="number-option">91</div>
+        </div>
+    </div>
+    <div id="exercise">
+        <form action = "" method = "get" onsubmit="event.preventDefault();">
+        <p id="question" style="text-align: center;">Fill in the blanks</p>
+    
+        <div class="question">
+            <p><span id="num1" class="random-number"></span> + <span id="num2" class="random-number"></span> = 
+            <input type="number" id="answer1" placeholder="Answer" min="0" max="199">
+            </p>
+        </div>
+        
+        <div class="question">
+            <p><span id="num3" class="random-number"></span> + <span id="num4" class="random-number"></span> =
+            <input type="number" id="answer2" placeholder="Answer" min="0" max="199">
+            </p>
+        </div>
+        
+        <div class="question">
+            <p><span id="num5" class="random-number"></span> + <span id="num6" class="random-number"></span> =
+            <input type="number" id="answer3" placeholder="Answer" min="0" max="199">
+            </p>
+        </div>
+        
+         <div class="question">
+            <p><span id="num7" class="random-number"></span> + <span id="num8" class="random-number"></span> =
+            <input type="number" id="answer4" placeholder="Answer" min="0" max="199">
+            </p>
+        <div id="Submitcont" >
+            <!-- <input id='submit' type="submit" value="Submit">
+             -->
+             <button id='submit'onclick="checkAnswers()" >Submit Answers</button>
+        </div>
+        </div>
+        
+    </form>
+        <!-- <button onclick="checkAnswers()">Submit Answers</button> -->
+    </div>
+    <div id="interact" data-score="" style="display: none;"></div>
+    <div id="left"><b style="pointer-events: none;">&lt</b></div>
+    <div id="right"><b style="pointer-events: none;">&gt</b></div>
+    <div id="username" >
+        Username
+        <form >
+            <input id="name" onkeydown="return /[a-z]/i.test(event.key)">
+        </form>
+        
+    </div>
+    <div id="start">Start Quiz</div>
+    <div id="final">
+    <div id="scoresheet">
+    </div>
+    <div id="score">
+    <form>
+        <input id="submit2" type="submit" value="Try Again" >
+    </form>
+    </div>
+    </div>
+</body>
+</html>
